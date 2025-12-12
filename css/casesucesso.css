@@ -62,4 +62,8 @@
     .carousel-caption.caption-top {
         top: 5%;
     }
+
+    .titulo-casesucesso h2 {
+    padding: 0 16px;
+}
 }

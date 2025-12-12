@@ -93,6 +93,10 @@
     .image-banner-home {
         margin-top: -3rem;
     }
+
+    .cont-texto-img{
+        padding: 2rem 2rem;
+    }
 }
 
 @media (max-width: 768px) {
