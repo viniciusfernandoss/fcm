@@ -1,5 +1,6 @@
 /* Fontes */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --fonte-Inter: "Inter", sans-serif;
     --fonte-Poppins: "Poppins", sans-serif;
@@ -14,17 +15,93 @@
     --cor-amarelo2: #D2B174;
 }
 
+* {
+    font-family: var(--fonte-Inter);
+}
+
 .sessao-inicial {
-    margin-top: 150px;
+    margin-top: 120px;
+    padding-bottom: 2rem;
+}
+
+/* Texto */
+.fonte-titulo-home {
+    font-size: 3rem;
 }
 
 .destaque-azul {
     color: var(--cor-azul1);
 }
 
-.btn-home{
-    text-decoration: none;
-    color: var(--cor-branco);    
+.btn-home {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+
     background-color: var(--cor-amarelo1);
+    color: var(--cor-branco);
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
 }
 
+.cont-texto-img{
+    padding: 2rem 5rem;
+}
+
+
+/* WRAPPER da imagem para controle */
+.imagem-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0 !important;
+}
+
+/* Imagem ocupando toda a lateral */
+.imagem-home {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 80px;
+}
+
+
+@media (max-width: 991px) {
+    .imagem-home {
+        border-bottom-left-radius: 0;
+    }
+
+    .cont-text-banner {
+        flex-direction: column-reverse;
+    }
+
+    .linha-header {
+        display: none;
+    }
+
+    .sessao-inicial {
+        padding-bottom: 0;
+    }
+
+    .image-banner-home {
+        margin-top: -3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .imagem-home {
+        border-radius: 0;
+        height: auto;
+    }
+
+    .fonte-titulo-home {
+        font-size: 2rem;
+    }
+}

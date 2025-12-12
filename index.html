@@ -1,830 +1,757 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Escritório FCM</title>
 
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escritório FCM</title>
 
-    <!-- Link Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 
-    <!-- Link Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
+  <!-- Link Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
-    <!-- Link Swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+  <!-- Link Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="css/global.css" />
+  <!-- Link Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <!-- Link ScrollReveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="js/reveal.js" defer></script>
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="css/global.css" />
 
-  </head>
+  <!-- Link ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/reveal.js" defer></script>
 
-  <body>
-    <header>
-      <div class="header-top-fixo w-100">
-        <!--
+</head>
+
+<body>
+  <header>
+    <div class="header-top-fixo w-100">
+      <!--
             ==================================================================
                             Barra de contatos e informações
             ==================================================================
             -->
-        <section class="navinfo bg-info-bar" id="headerr">
-          <div class="container d-none d-lg-block py-2" id="info-bar">
-            <div class="content-info-bar d-flex justify-content-between">
-              <div class="contato-info-bar d-flex align-items-center">
-                <p class="mb-0 me-4 ms-2">Soluções jurídicas em Recife, atendendo todo o Brasil!</p>
-              </div>
-              <div class="redes-info-bar d-flex align-items-center">
-                <p class="me-5 mb-0">
-                    <i class="bi bi-telephone-fill"></i>
-                    (81) 4042-3990
-                </p>
-                <p class="mb-0">
-                    <i class="bi bi-clock"></i>
-                    Seg-Sex 9:00 às 19:00
-                </p>
-              </div>
+      <section class="navinfo bg-info-bar" id="headerr">
+        <div class="container d-none d-lg-block py-2" id="info-bar">
+          <div class="content-info-bar d-flex justify-content-between">
+            <div class="contato-info-bar d-flex align-items-center">
+              <p class="mb-0 me-4 ms-2">Soluções jurídicas em Recife, atendendo todo o Brasil!</p>
+            </div>
+            <div class="redes-info-bar d-flex align-items-center">
+              <p class="me-5 mb-0">
+                <i class="bi bi-telephone-fill"></i>
+                (81) 4042-3990
+              </p>
+              <p class="mb-0">
+                <i class="bi bi-clock"></i>
+                Seg-Sex 9:00 às 19:00
+              </p>
             </div>
           </div>
-        </section>
-        <div class="linha-header mx-auto rounded-5" id="linha-header"></div>
-        <!--
+        </div>
+      </section>
+      <div class="linha-header mx-auto rounded-5" id="linha-header"></div>
+      <!--
             ==================================================================
                                 Barra de Navegações
             ==================================================================
             -->
-        <nav class="navbar py-1 navbar-expand-lg navbar-light" id="menuNav">
-          <div class="container d-flex justify-content-between">
-            <a class="navbar-brand" href="index.html">
-              <img
-                src="img/logo-header.svg"
-                alt="logo"
-                class="logo-header-nova"
-              />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="bi bi-list fs-1"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                  <a class="nav-link fw-normal" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-normal" href="#">O ESCRITÓRIO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-normal" href="#">ATUAÇÃO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-normal" href="#">ADVOGADOS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-normal" href="#">CONTATO</a>
-                </li>
-              </ul>
-            </div>
-            <a href="" class="btn-fazer-contato d-none fs-6 d-lg-inline-block fw-bolder py-2 px-3 rounded-5">
-                <i class="bi bi-whatsapp"></i>
-                ATENDIMENTO ONLINE
-            </a>
+      <nav class="navbar py-1 navbar-expand-lg navbar-light" id="menuNav">
+        <div class="container d-flex justify-content-between">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo-header.svg" alt="logo" class="logo-header-nova" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-1"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link fw-normal" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-normal" href="#">O ESCRITÓRIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-normal" href="#">ATUAÇÃO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-normal" href="#">ADVOGADOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-normal" href="#">CONTATO</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </div>
-    </header>
+          <a href="" class="btn-fazer-contato d-none fs-6 d-lg-inline-block fw-bolder py-2 px-3 rounded-5">
+            <i class="bi bi-whatsapp"></i>
+            ATENDIMENTO ONLINE
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-      <!-- 
+  <main>
+    <!-- 
         ==================================================================
                                 Banner Inicial
         ==================================================================
         -->
-        <section class="sessao-inicial">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 d-flex align-items-center">
-                        <div class="content1-home">
-                            <h1 class="fw-bold">
-                                O escritório <strong class="destaque-azul">FCM Advogados</strong> fornece inteligência jurídica inovadora, ágil e eficiente. 
-                            </h1>
-                            <p class="mt-3 mb-4">
-                                Com mais de 15 anos de atuação no mercado, prestamos serviços personalizados em diversas áreas do direito, como parceiros de confiança de nossos clientes, para impulsionar oportunidades e preservar a segurança de seus negócios.
-                            </p>
-                            <a href="#" class="btn-home px-5 py-2 rounded-5">
-                                FALE CONOSCO AGORA
-                            </a>
+    <section class="sessao-inicial">
+    <div class="container-fluid px-0">
+        <div class="row g-0 cont-text-banner">
+
+            <!-- TEXTO -->
+            <div class="cont-texto-img col-lg-6 d-flex align-items-center">
+                <div>
+                    <h1 class="fw-bold fonte-titulo-home">
+                        O escritório <strong class="destaque-azul">FCM Advogados</strong> fornece
+                        inteligência jurídica inovadora, ágil e eficiente.
+                    </h1>
+
+                    <p class="mt-3 mb-4 fs-5">
+                        Com mais de 15 anos de atuação no mercado, prestamos serviços personalizados em diversas áreas
+                        do direito, como parceiros de confiança de nossos clientes, para impulsionar oportunidades e preservar
+                        a segurança de seus negócios.
+                    </p>
+
+                    <a href="#" class="btn-home">FALE CONOSCO AGORA</a>
+                </div>
+            </div>
+
+            <!-- IMAGEM -->
+            <div class="col-lg-6 imagem-wrapper image-banner-home">
+                <img src="img/img-home.png" class="imagem-home" alt="Equipe FCM Advogados">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <section id="servicos">
+      <div class="container pb-3 pt-5">
+        <h2 class="text-center  fw-bold fs-1">Especialidades Jurídicas</h2>
+        <p class="text-center mb-5">
+          Oferecemos <strong>atendimento completo e estratégico</strong> nas seguintes áreas:
+        </p>
+
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="content-card-servicos p-4 rounded-4">
+              <img src="icons/icone1-servicos.png" class="img-fluid" alt="Icone" />
+              <h3 class="fs-5 m-0 my-3">
+                CONSULTORIA JURÍDICA
+              </h3>
+              <p class="m-0">
+                Nossa equipe está aqui para ser seu guia confiável no complexo mundo do Direito. Oferecemos orientação
+                personalizada, esclarecendo suas dúvidas e fornecendo soluções claras para as questões legais que você
+                enfrenta.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="content-card-servicos p-4 rounded-4">
+              <img src="icons/icone2-servicos.png" class="img-fluid" alt="Icone" />
+              <h3 class="fs-5 m-0 my-3">
+                DUE DILIGENCE
+              </h3>
+              <p class="m-0">
+                Antes de tomar qualquer decisão importante, nossa equipe se dedica a entender cada detalhe do seu
+                cenário. Realizamos uma investigação detalhada antes de transações comerciais, aquisições ou
+                investimentos. Visando avaliar riscos legais, financeiros e operacionais. 
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="content-card-servicos p-4 rounded-4">
+              <img src="icons/icone3-servicos.png" class="img-fluid" alt="Icone" />
+              <h3 class="fs-5 m-0 my-3">
+                OFF SHORE
+              </h3>
+              <p class="m-0">
+                Quando se trata de expansão internacional ou otimização fiscal, estamos ao seu lado. Oferecemos soluções
+                sob medida para a gestão de entidades em jurisdições estrangeiras, visando atender às suas metas
+                financeiras e estratégicas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="#" class="btn-servicos px-5 py-3 rounded-5">
+            FALE COM UM ESPECIALISTA
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="container mt-5 pt-0 pt-lg-3 pb-5">
+        <div class="row">
+          <div class="col-lg-6 d-lg-flex align-items-center">
+            <div class="content2-sobre px-3">
+              <h2 class="fw-bold fs-2 text-start mb-3">
+                <span class="fs-6 subtitulo-sobre">O ESCRITÓRIO</span>
+                <br>
+                Conheça a<br> <strong class="destaque-azul">FCM ADVOGADOSA</strong>
+              </h2>
+              <p class="mb-5">
+                <strong>Quanto custa contratar um Advogado em Recife?</strong>
+                <br><br>
+                O valor dos honorários advocatícios em Recife depende do acordo firmado entre o cliente e o profissional
+                escolhido. Para evitar qualquer mal-entendido, é essencial que tudo esteja formalizado em um contrato
+                escrito, com cópia em mãos para ambas as partes.
+                <br><br>
+                Cada caso possui suas particularidades, e o preço pode variar conforme a complexidade da demanda. No
+                entanto, o advogado deve sempre respeitar o valor mínimo indicado pela tabela de honorários da OAB
+                Pernambuco.
+                <br><br>
+                Essa exigência está prevista no artigo 48, §6º, do Código de Ética e Disciplina da OAB (Resolução nº
+                02/2015).
+                <br><br>
+                Desconfie de valores muito abaixo do mercado — cobranças excessivamente baixas podem refletir falta de
+                preparo ou comprometimento, o que pode gerar prejuízos futuros e até a necessidade de contratar outro
+                profissional para resolver o problema corretamente.
+              </p>
+              <a href="#" class="btn-sobre px-5 py-3 rounded-5">
+                FALAR COM ADVOGADO
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 ps-0 d-flex justify-content-center align-items-center">
+            <div class="content1-sobre">
+              <img src="img/img-sobre.png" alt="Logo" class="d-lg-block d-none rounded-2 w-75 mx-auto" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="advogados">
+      <div class="container mt-5 advogado">
+        <div class="titulo-advogados">
+          <h2 class="text-center mb-5 fw-bold fs-1">
+            Nossos Advogados
+          </h2>
+        </div>
+
+        <div class="swiper swiper-feedback mb-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-advogada">
+                <img src="img/card1-advogados.svg" alt="card">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-advogada">
+                <img src="img/card2-advogados.svg" alt="card">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-advogada">
+                <img src="img/card3-advogados.svg" alt="card">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-advogada">
+                <img src="img/card4-advogados.svg" alt="card">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="slider-wrapper-btn swiper-button-prev"></div>
+          <div class="slider-wrapper-btn swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <p class="text-center fs-5">
+          Nosso time de advogados é composto por profissionais altamente qualificados e especializados em diversas áreas
+          do Direito. Cada um desses profissionais traz uma vasta experiência em serviços como divórcio, prisões
+          ilegais, pensões, e muito mais. Estamos prontos para oferecer soluções jurídicas eficazes e personalizadas,
+          atendendo às necessidades de nossos clientes com dedicação e competência.
+        </p>
+      </div>
+    </section>
+
+    <section id="fale-conosco" class="my-5">
+      <div class="container">
+
+        <div class="titulo-fale-conosco my-5">
+          <h2 class="fw-bold fs-1 text-center">
+            Fale Conosco
+          </h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="content1-fale-conosco">
+              <img src="img/img-fale-conosco.png" alt="img">
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="content2-fale-conosco my-5">
+              <form id="form-contato" action="https://formsubmit.co/vinicius.senac.ads@gmail.com" method="POST"
+                class="d-flex flex-column">
+                <!-- Configurações do FormSubmit -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+                <!-- Campos do formulário -->
+                <input type="text" name="nome" placeholder="Nome" required class="form-nome mb-4">
+                <div class="content-forms d-flex justify-content-between mb-4">
+                  <input type="email" name="email" placeholder="E-email" required class="form-email">
+                  <input type="text" name="assunto" placeholder="Assunto" required class="">
+                </div>
+                <textarea name="mensagem" placeholder="Mensagem" rows="4" required
+                  class="form-mensagem mb-4"></textarea>
+
+                <div class="btn-enviar">
+                  <button type="submit" class="fs-5 px-5 py-2 fw-bolder rounded-2">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="casesucesso">
+      <div class="container-fluid m-0 p-0">
+        <div id="carouselExampleCaptions" class="carousel slide mb-5">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/img1-casesucesso.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <div
+                  class="titulo-carousel bg-black mx-auto rounded-2 py-1 d-flex justify-content-center align-items-center w-50">
+                  <h2>Especialistas em Plano de Saúde</h2>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/img2-casesucesso.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <div
+                  class="titulo-carousel bg-black mx-auto rounded-2 py-1 d-flex justify-content-center align-items-center w-50">
+                  <h2>Especialistas em Direito Aéreo</h2>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/img3-casesucesso.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <div
+                  class="titulo-carousel bg-black mx-auto rounded-2 py-1 d-flex justify-content-center align-items-center w-50">
+                  <h2>Especialistas em Assessoria Jurídica</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="btn-casesucesso text-center">
+          <a href="#" class="px-5 py-3 fw-bold rounded-5">
+            FALE COM UM ESPECIALISTA
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog">
+      <div class="container py-5">
+        <div class="titulo-blog text-center mb-5">
+          <h2 class="fw-bold fs-1">Conheça nosso Blog</h2>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="card content-card-blog">
+              <img src="img/img-card-blog.png" class="card-img-top" alt="..." />
+              <div class="card-body justify-content-between d-flex flex-column p-4">
+                <h5 class="card-title fw-bolder">
+                  Título da matéria aqui
+                </h5>
+                <p class="mb-2">
+                  <i class="bi bi-clock me-1"></i>
+                  07/07/2025
+                </p>
+                <p class="card-text">
+                  Breve descrição da matéria aqui.
+                </p>
+                <a href="#" class="btn btn-card-blog w-100" target="_blank">
+                  Ler mais
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="card content-card-blog">
+              <img src="img/img-card-blog.png" class="card-img-top" alt="..." />
+              <div class="card-body justify-content-between d-flex flex-column p-4">
+                <h5 class="card-title fw-bolder">
+                  Título da matéria aqui
+                </h5>
+                <p class="mb-2">
+                  <i class="bi bi-clock me-1"></i>
+                  07/07/2025
+                </p>
+                <p class="card-text">
+                  Breve descrição da matéria aqui.
+                </p>
+                <a href="#" class="btn btn-card-blog w-100" target="_blank">
+                  Ler mais
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="card content-card-blog">
+              <img src="img/img-card-blog.png" class="card-img-top" alt="..." />
+              <div class="card-body justify-content-between d-flex flex-column p-4">
+                <h5 class="card-title fw-bolder">
+                  Título da matéria aqui
+                </h5>
+                <p class="mb-2">
+                  <i class="bi bi-clock me-1"></i>
+                  07/07/2025
+                </p>
+                <p class="card-text">
+                  Breve descrição da matéria aqui.
+                </p>
+                <a href="#" class="btn btn-card-blog w-100" target="_blank">
+                  Ler mais
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-blog text-center">
+          <a href="#" class="px-5 fw-bold py-3 rounded-5">
+            MAIS ARTIGOS E NOTÍCIAS
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container py-5">
+        <h2 class="fw-bold fs-1 text-center titulo-faq mb-4">
+          Perguntas Frequentes
+        </h2>
+        <div class="row">
+          <div class="col-12">
+            <div class="content-faq">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item mt-3 rounded-3">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Está com dúvidas e não sabe por onde começar com um Advogado - Recife?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <hr class="mx-3 my-0 linha-faq" />
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero quis fuga, molestias earum
+                      consequuntur nemo nulla, incidunt, esse et illum obcaecati? Nisi maiores fuga quod quam a?
+                      Assumenda, laboriosam!
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid m-0 p-0">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="content-faq">
+                        <div class="accordion-item mt-3 rounded-3">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                              Quanto custa contratar um advogado?
+                            </button>
+                          </h2>
+                          <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <hr class="mx-3 my-0 linha-faq" />
+                            <div class="accordion-body">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt cumque accusantium
+                              dicta cum, quisquam aut, saepe fugiat laudantium, ullam id facere quaerat neque placeat
+                              repudiandae. Nihil accusantium ut vitae sunt.
+                            </div>
+                          </div>
                         </div>
+                        <div class="accordion-item mt-3 rounded-3">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                              Como funciona a primeira consulta?
+                            </button>
+                          </h2>
+                          <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <hr class="mx-3 my-0 linha-faq" />
+                            <div class="accordion-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad eos minus a
+                              accusantium suscipit sint rem omnis veniam consequatur quod fugit quasi facilis
+                              aspernatur, animi repellendus culpa necessitatibus doloribus!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item mt-3 rounded-3">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                              O advogado garante o resultado do processo?
+                            </button>
+                          </h2>
+                          <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <hr class="mx-3 my-0 linha-faq" />
+                            <div class="accordion-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quod quia laboriosam
+                              exercitationem amet sint consectetur, labore at quo neque? Porro magnam ipsam inventore,
+                              quasi officiis error placeat ipsa dicta?
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item mt-3 rounded-3">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                              Como acompanho o andamento do meu processo?
+                            </button>
+                          </h2>
+                          <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <hr class="mx-3 my-0 linha-faq" />
+                            <div class="accordion-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum recusandae omnis quos
+                              quas doloremque quo ipsam repudiandae sed saepe harum consequatur rerum tempore deleniti
+                              facilis in, iusto voluptatem sapiente? Illo.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="content2-home rounded-4">
-                            <img src="img/img-home.png" alt="img" class="img-fluid rounded-4">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-      <section id="servicos">
-        <div class="container pb-3 pt-5">
-          <h2 class="text-center  fw-bold fs-1">Especialidades Jurídicas</h2>
-          <p class="text-center mb-5">
-            Oferecemos <strong>atendimento completo e estratégico</strong> nas seguintes áreas:
-          </p>
-
-          <div class="row">
-            <div class="col-lg-4 mb-4">
-                <div class="content-card-servicos p-4 rounded-4">
-                    <img src="icons/icone1-servicos.png" class="img-fluid" alt="Icone" />
-                    <h3 class="fs-5 m-0 my-3">
-                        CONSULTORIA JURÍDICA
-                    </h3>
-                    <p class="m-0">
-                        Nossa equipe está aqui para ser seu guia confiável no complexo mundo do Direito. Oferecemos orientação personalizada, esclarecendo suas dúvidas e fornecendo soluções claras para as questões legais que você enfrenta.
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-4 mb-4">
-                <div class="content-card-servicos p-4 rounded-4">
-                    <img src="icons/icone2-servicos.png" class="img-fluid" alt="Icone" />
-                    <h3 class="fs-5 m-0 my-3">
-                        DUE DILIGENCE
-                    </h3>
-                    <p class="m-0">
-                        Antes de tomar qualquer decisão importante, nossa equipe se dedica a entender cada detalhe do seu cenário. Realizamos uma investigação detalhada antes de transações comerciais, aquisições ou investimentos. Visando avaliar riscos legais, financeiros e operacionais. 
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-4 mb-4">
-                <div class="content-card-servicos p-4 rounded-4">
-                    <img src="icons/icone3-servicos.png" class="img-fluid" alt="Icone" />
-                    <h3 class="fs-5 m-0 my-3">
-                        OFF SHORE
-                    </h3>
-                    <p class="m-0">
-                        Quando se trata de expansão internacional ou otimização fiscal, estamos ao seu lado. Oferecemos soluções sob medida para a gestão de entidades em jurisdições estrangeiras, visando atender às suas metas financeiras e estratégicas.
-                    </p>
-                </div>
-            </div>
-          </div>
-
-          <div class="text-center mt-4">
-            <a href="#" class="btn-servicos px-5 py-3 rounded-5">
-                FALE COM UM ESPECIALISTA
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section id="sobre">
-        <div class="container mt-5 pt-0 pt-lg-3 pb-5">
-          <div class="row">
-            <div class="col-lg-6 d-lg-flex align-items-center">
-              <div class="content2-sobre px-3">
-                <h2 class="fw-bold fs-2 text-start mb-3">
-                  <span class="fs-6 subtitulo-sobre">O ESCRITÓRIO</span>
-                  <br>
-                  Conheça a<br> <strong class="destaque-azul">FCM ADVOGADOSA</strong>
-                </h2>
-                <p class="mb-5">
-                    <strong>Quanto custa contratar um Advogado em Recife?</strong>
-                    <br><br>
-                    O valor dos honorários advocatícios em Recife depende do acordo firmado entre o cliente e o profissional escolhido. Para evitar qualquer mal-entendido, é essencial que tudo esteja formalizado em um contrato escrito, com cópia em mãos para ambas as partes.
-                    <br><br>
-                    Cada caso possui suas particularidades, e o preço pode variar conforme a complexidade da demanda. No entanto, o advogado deve sempre respeitar o valor mínimo indicado pela tabela de honorários da OAB Pernambuco.
-                    <br><br>
-                    Essa exigência está prevista no artigo 48, §6º, do Código de Ética e Disciplina da OAB (Resolução nº 02/2015).
-                    <br><br>
-                    Desconfie de valores muito abaixo do mercado — cobranças excessivamente baixas podem refletir falta de preparo ou comprometimento, o que pode gerar prejuízos futuros e até a necessidade de contratar outro profissional para resolver o problema corretamente.
-                </p>
-                <a href="#" class="btn-sobre px-5 py-3 rounded-5">
-                    FALAR COM ADVOGADO
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-6 ps-0 d-flex justify-content-center align-items-center">
-              <div class="content1-sobre">
-                <img src="img/img-sobre.png" alt="Logo" class="d-lg-block d-none rounded-2 w-75 mx-auto"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="advogados">
-        <div class="container mt-5 advogado">
-            <div class="titulo-advogados">
-                <h2 class="text-center mb-5 fw-bold fs-1">
-                    Nossos Advogados
-                </h2>
-            </div>
-            
-            <div class="swiper swiper-feedback mb-5">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="card-advogada">
-                            <img src="img/card1-advogados.svg" alt="card">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card-advogada">
-                            <img src="img/card2-advogados.svg" alt="card">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card-advogada">
-                            <img src="img/card3-advogados.svg" alt="card">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card-advogada">
-                            <img src="img/card4-advogados.svg" alt="card">
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="slider-wrapper-btn swiper-button-prev"></div>
-                <div class="slider-wrapper-btn swiper-button-next"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-
-            <p class="text-center fs-5">
-                Nosso time de advogados é composto por profissionais altamente qualificados e especializados em diversas áreas do Direito. Cada um desses profissionais traz uma vasta experiência em serviços como divórcio, prisões ilegais, pensões, e muito mais. Estamos prontos para oferecer soluções jurídicas eficazes e personalizadas, atendendo às necessidades de nossos clientes com dedicação e competência.
-            </p>
-        </div>
-      </section>
-
-      <section id="fale-conosco" class="my-5">
-        <div class="container">
-
-            <div class="titulo-fale-conosco my-5">
-                <h2 class="fw-bold fs-1 text-center">
-                    Fale Conosco
-                </h2>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="content1-fale-conosco">
-                        <img src="img/img-fale-conosco.png" alt="img">
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="content2-fale-conosco my-5">
-                        <form id="form-contato" action="https://formsubmit.co/vinicius.senac.ads@gmail.com" method="POST" class="d-flex flex-column">
-                            <!-- Configurações do FormSubmit -->
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_template" value="table">
-
-                            <!-- Campos do formulário -->
-                            <input type="text" name="nome" placeholder="Nome" required class="form-nome mb-4">
-                            <div class="content-forms d-flex justify-content-between mb-4">
-                                <input type="email" name="email"   placeholder="E-email" required class="form-email">
-                                <input type="text"  name="assunto" placeholder="Assunto" required class="">
+                      <div class="content-faq">
+                        <div class="accordion-item mt-3 rounded-3">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                              Posso parcelar o pagamento dos honorários?
+                            </button>
+                          </h2>
+                          <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <hr class="mx-3 my-0 linha-faq" />
+                            <div class="accordion-body">
+                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id assumenda minima doloribus,
+                              animi ipsum nam. Sapiente alias quo necessitatibus perferendis nulla quis, excepturi
+                              fugiat nemo? Ipsam repudiandae velit illum culpa.
                             </div>
-                            <textarea name="mensagem" placeholder="Mensagem" rows="4" required class="form-mensagem mb-4"></textarea>
-
-                            <div class="btn-enviar" >
-                                <button type="submit" class="fs-5 px-5 py-2 fw-bolder rounded-2">Enviar</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
-
-      <section id="casesucesso">
-        <div class="container-fluid m-0 p-0">
-            <div id="carouselExampleCaptions" class="carousel slide mb-5">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/img1-casesucesso.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <div class="titulo-carousel bg-black mx-auto rounded-2 py-1 d-flex justify-content-center align-items-center w-50">
-                                <h2>Especialistas em Plano de Saúde</h2>
-                            </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/img2-casesucesso.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <div class="titulo-carousel bg-black mx-auto rounded-2 py-1 d-flex justify-content-center align-items-center w-50">
-                                <h2>Especialistas em Direito Aéreo</h2>
+                        <div class="accordion-item mt-3 rounded-3">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                              Preciso de um advogado para entrar com uma ação judicial?
+                            </button>
+                          </h2>
+                          <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <hr class="mx-3 my-0 linha-faq" />
+                            <div class="accordion-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius commodi assumenda, quod ut
+                              nihil perferendis molestiae tenetur in distinctio maxime quaerat similique alias libero
+                              totam minima officiis est a. Nam.
                             </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/img3-casesucesso.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <div class="titulo-carousel bg-black mx-auto rounded-2 py-1 d-flex justify-content-center align-items-center w-50">
-                                <h2>Especialistas em Assessoria Jurídica</h2>
+                        <div class="accordion-item mt-3 rounded-3">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                              Quanto tempo leva um processo?
+                            </button>
+                          </h2>
+                          <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <hr class="mx-3 my-0 linha-faq" />
+                            <div class="accordion-body">
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates totam ipsam tempora.
+                              Inventore labore culpa illo debitis ea perspiciatis beatae quae, explicabo molestiae, et
+                              facere ut aut ipsam totam exercitationem!
                             </div>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-            <div class="btn-casesucesso text-center">
-                <a href="#" class="px-5 py-3 fw-bold rounded-5">
-                    FALE COM UM ESPECIALISTA
-                </a>
-            </div>
-        </div>
-      </section> 
-
-      <section id="blog">
-        <div class="container py-5">
-          <div class="titulo-blog text-center mb-5">
-            <h2 class="fw-bold fs-1">Conheça nosso Blog</h2>
-          </div>
-          <div class="row mb-5">
-            <div class="col-lg-4 mb-4 mb-lg-0">
-              <div class="card content-card-blog">
-                <img src="img/img-card-blog.png" class="card-img-top" alt="..." />
-                <div class="card-body justify-content-between d-flex flex-column p-4">
-                  <h5 class="card-title fw-bolder">
-                    Título da matéria aqui
-                  </h5>
-                  <p class="mb-2">
-                    <i class="bi bi-clock me-1"></i>
-                    07/07/2025
-                  </p>
-                  <p class="card-text">
-                    Breve descrição da matéria aqui.
-                  </p>
-                  <a
-                    href="#"
-                    class="btn btn-card-blog w-100"
-                    target="_blank"
-                  >
-                    Ler mais
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-4 mb-lg-0">
-              <div class="card content-card-blog">
-                <img src="img/img-card-blog.png" class="card-img-top" alt="..." />
-                <div class="card-body justify-content-between d-flex flex-column p-4">
-                  <h5 class="card-title fw-bolder">
-                    Título da matéria aqui
-                  </h5>
-                  <p class="mb-2">
-                    <i class="bi bi-clock me-1"></i>
-                    07/07/2025
-                  </p>
-                  <p class="card-text">
-                    Breve descrição da matéria aqui.
-                  </p>
-                  <a
-                    href="#"
-                    class="btn btn-card-blog w-100"
-                    target="_blank"
-                  >
-                    Ler mais
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-4 mb-lg-0">
-              <div class="card content-card-blog">
-                <img src="img/img-card-blog.png" class="card-img-top" alt="..." />
-                <div class="card-body justify-content-between d-flex flex-column p-4">
-                  <h5 class="card-title fw-bolder">
-                    Título da matéria aqui
-                  </h5>
-                  <p class="mb-2">
-                    <i class="bi bi-clock me-1"></i>
-                    07/07/2025
-                  </p>
-                  <p class="card-text">
-                    Breve descrição da matéria aqui.
-                  </p>
-                  <a
-                    href="#"
-                    class="btn btn-card-blog w-100"
-                    target="_blank"
-                  >
-                    Ler mais
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="btn-blog text-center">
-            <a href="#" class="px-5 fw-bold py-3 rounded-5">
-                MAIS ARTIGOS E NOTÍCIAS
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section id="faq">
-        <div class="container py-5">
-          <h2 class="fw-bold fs-1 text-center titulo-faq mb-4">
-            Perguntas Frequentes
-          </h2>
-          <div class="row">
-            <div class="col-12">
-              <div class="content-faq">
-                <div class="accordion" id="accordionExample">
-                  <div class="accordion-item mt-3 rounded-3">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button rounded-3 collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                      >
-                        Está com dúvidas e não sabe por onde começar com um Advogado - Recife?
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseOne"
-                      class="accordion-collapse collapse show"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <hr class="mx-3 my-0 linha-faq"/>
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero quis fuga, molestias earum consequuntur nemo nulla, incidunt, esse et illum obcaecati? Nisi maiores fuga quod quam a? Assumenda, laboriosam!
+                        <div class="accordion-item mt-3 rounded-3">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                              O que devo levar na primeira reunião com o advogado?
+                            </button>
+                          </h2>
+                          <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <hr class="mx-3 my-0 linha-faq" />
+                            <div class="accordion-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugit optio facere odio
+                              minima autem doloremque ut eligendi officiis provident a ducimus sapiente sint suscipit,
+                              fuga pariatur eveniet amet dolor.
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="container-fluid m-0 p-0">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="content-faq">
-                                <div class="accordion-item mt-3 rounded-3">
-                                    <h2 class="accordion-header">
-                                    <button
-                                        class="accordion-button rounded-3 collapsed"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapse2"
-                                        aria-expanded="false"
-                                        aria-controls="collapse2"
-                                    >
-                                        Quanto custa contratar um advogado?
-                                    </button>
-                                    </h2>
-                                    <div
-                                    id="collapse2"
-                                    class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample"
-                                    >
-                                    <hr class="mx-3 my-0 linha-faq"/>
-                                    <div class="accordion-body">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt cumque accusantium dicta cum, quisquam aut, saepe fugiat laudantium, ullam id facere quaerat neque placeat repudiandae. Nihil accusantium ut vitae sunt.
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item mt-3 rounded-3">
-                                    <h2 class="accordion-header">
-                                    <button
-                                        class="accordion-button rounded-3 collapsed"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapse3"
-                                        aria-expanded="false"
-                                        aria-controls="collapse3"
-                                    >
-                                        Como funciona a primeira consulta?
-                                    </button>
-                                    </h2>
-                                    <div
-                                    id="collapse3"
-                                    class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample"
-                                    >
-                                    <hr class="mx-3 my-0 linha-faq"/>
-                                    <div class="accordion-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad eos minus a accusantium suscipit sint rem omnis veniam consequatur quod fugit quasi facilis aspernatur, animi repellendus culpa necessitatibus doloribus!
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item mt-3 rounded-3">
-                                    <h2 class="accordion-header">
-                                    <button
-                                        class="accordion-button rounded-3 collapsed"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapse4"
-                                        aria-expanded="false"
-                                        aria-controls="collapse4"
-                                    >
-                                        O advogado garante o resultado do processo?
-                                    </button>
-                                    </h2>
-                                    <div
-                                    id="collapse4"
-                                    class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample"
-                                    >
-                                    <hr class="mx-3 my-0 linha-faq"/>
-                                    <div class="accordion-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quod quia laboriosam exercitationem amet sint consectetur, labore at quo neque? Porro magnam ipsam inventore, quasi officiis error placeat ipsa dicta?
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item mt-3 rounded-3">
-                                    <h2 class="accordion-header">
-                                    <button
-                                        class="accordion-button rounded-3 collapsed"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapse8"
-                                        aria-expanded="false"
-                                        aria-controls="collapse8"
-                                    >
-                                        Como acompanho o andamento do meu processo?
-                                    </button>
-                                    </h2>
-                                    <div
-                                    id="collapse8"
-                                    class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample"
-                                    >
-                                    <hr class="mx-3 my-0 linha-faq"/>
-                                    <div class="accordion-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum recusandae omnis quos quas doloremque quo ipsam repudiandae sed saepe harum consequatur rerum tempore deleniti facilis in, iusto voluptatem sapiente? Illo.
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="content-faq">
-                                <div class="accordion-item mt-3 rounded-3">
-                                    <h2 class="accordion-header">
-                                    <button
-                                        class="accordion-button rounded-3 collapsed"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapse5"
-                                        aria-expanded="false"
-                                        aria-controls="collapse5"
-                                    >
-                                        Posso parcelar o pagamento dos honorários?
-                                    </button>
-                                    </h2>
-                                    <div
-                                    id="collapse5"
-                                    class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample"
-                                    >
-                                    <hr class="mx-3 my-0 linha-faq"/>
-                                    <div class="accordion-body">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id assumenda minima doloribus, animi ipsum nam. Sapiente alias quo necessitatibus perferendis nulla quis, excepturi fugiat nemo? Ipsam repudiandae velit illum culpa.
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item mt-3 rounded-3">
-                                    <h2 class="accordion-header">
-                                    <button
-                                        class="accordion-button rounded-3 collapsed"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapse6"
-                                        aria-expanded="false"
-                                        aria-controls="collapse6"
-                                    >
-                                        Preciso de um advogado para entrar com uma ação judicial?
-                                    </button>
-                                    </h2>
-                                    <div
-                                    id="collapse6"
-                                    class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample"
-                                    >
-                                    <hr class="mx-3 my-0 linha-faq"/>
-                                    <div class="accordion-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius commodi assumenda, quod ut nihil perferendis molestiae tenetur in distinctio maxime quaerat similique alias libero totam minima officiis est a. Nam.
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item mt-3 rounded-3">
-                                    <h2 class="accordion-header">
-                                    <button
-                                        class="accordion-button rounded-3 collapsed"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapse7"
-                                        aria-expanded="false"
-                                        aria-controls="collapse7"
-                                    >
-                                        Quanto tempo leva um processo?
-                                    </button>
-                                    </h2>
-                                    <div
-                                    id="collapse7"
-                                    class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample"
-                                    >
-                                    <hr class="mx-3 my-0 linha-faq"/>
-                                    <div class="accordion-body">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates totam ipsam tempora. Inventore labore culpa illo debitis ea perspiciatis beatae quae, explicabo molestiae, et facere ut aut ipsam totam exercitationem!
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item mt-3 rounded-3">
-                                    <h2 class="accordion-header">
-                                    <button
-                                        class="accordion-button rounded-3 collapsed"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapse9"
-                                        aria-expanded="false"
-                                        aria-controls="collapse9"
-                                    >
-                                        O que devo levar na primeira reunião com o advogado?
-                                    </button>
-                                    </h2>
-                                    <div
-                                    id="collapse9"
-                                    class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample"
-                                    >
-                                    <hr class="mx-3 my-0 linha-faq"/>
-                                    <div class="accordion-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugit optio facere odio minima autem doloremque ut eligendi officiis provident a ducimus sapiente sint suscipit, fuga pariatur eveniet amet dolor.
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-      <!-- 
+  <footer>
+    <!-- 
         ==================================================================
                                 Footer Menu
         ==================================================================
         -->
-      <div class="container pt-5" id="footer-menu">
-        <div class="row">
-          <div class="col-12 col-lg-3 mb-4 mb-lg-0">
-            <div class="content1-footer-menu d-flex flex-column">
-              <div class="logo-footer text-center mb-4">
-                <img src="img/logo-header.svg" alt="Logo footer" />
-              </div>
-              <div class="btn-content1-footer-menu">
-                <p class="m-0 p-0 mb-1">
-                    Ferrão Coutinho & Manzella Advogados Associados <br>
-                    Av. República do Líbano, 251, Torre 3, Sala 1716 - Pina, Recife - PE <br>
-                    CEP: 51110-160
-                </p>  
+    <div class="container pt-5" id="footer-menu">
+      <div class="row">
+        <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+          <div class="content1-footer-menu d-flex flex-column">
+            <div class="logo-footer text-center mb-4">
+              <img src="img/logo-header.svg" alt="Logo footer" />
+            </div>
+            <div class="btn-content1-footer-menu">
+              <p class="m-0 p-0 mb-1">
+                Ferrão Coutinho & Manzella Advogados Associados <br>
+                Av. República do Líbano, 251, Torre 3, Sala 1716 - Pina, Recife - PE <br>
+                CEP: 51110-160
+              </p>
+              <p>
+                (81) 4042-3990
+              </p>
+              <div class="content-rede-footer">
                 <p>
-                    (81) 4042-3990
-                </p> 
-                <div class="content-rede-footer">
-                    <p>
-                        Nossas redes:
-                    </p>
-                    <ul class="d-flex">
-                        <li>
-                            <a href="#">
-                                <i class="bi bi-facebook fs-4"></i>
-                            </a>
-                        </li>
-                        <li class="mx-3">
-                            <a href="#">
-                                <i class="bi bi-instagram fs-4"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="bi bi-whatsapp fs-4"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div> 
+                  Nossas redes:
+                </p>
+                <ul class="d-flex">
+                  <li>
+                    <a href="#">
+                      <i class="bi bi-facebook fs-4"></i>
+                    </a>
+                  </li>
+                  <li class="mx-3">
+                    <a href="#">
+                      <i class="bi bi-instagram fs-4"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="bi bi-whatsapp fs-4"></i>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="col-lg-9">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 col-lg-4 mb-3 mb-lg-0">
-                        <div class="content2-footer-menu ps-lg-5">
-                            <ul class="m-0 p-0">
-                                <li class="mb-2"><a href="#" class="fs-4">Home</a></li>
-                                <li class="mb-2"><a href="#" class="fs-4">O Escritório</a></li>
-                                <li class="mb-2"><a href="#" class="fs-4">Atuação</a></li>
-                                <li class="mb-2"><a href="#" class="fs-4">Advogados</a></li>
-                                <li class="mb-2"><a href="#" class="fs-4">Blog</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-8 mb-3 mb-lg-0">
-                        <div class="map-container">
-                            <iframe 
-                                class="rounded-3"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.1508517088278!2d-34.89662012523069!3d-8.086094091942309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f3b1de091a5%3A0xaa36e8a250faaab6!2sAv.%20Rep%C3%BAblica%20do%20L%C3%ADbano%2C%20251%20-%20Pina%2C%20Recife%20-%20PE%2C%2051110-160!5e0!3m2!1spt-BR!2sbr!4v1764519351290!5m2!1spt-BR!2sbr"  
-                                allowfullscreen="" 
-                                loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-                    </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                <div class="content2-footer-menu ps-lg-5">
+                  <ul class="m-0 p-0">
+                    <li class="mb-2"><a href="#" class="fs-4">Home</a></li>
+                    <li class="mb-2"><a href="#" class="fs-4">O Escritório</a></li>
+                    <li class="mb-2"><a href="#" class="fs-4">Atuação</a></li>
+                    <li class="mb-2"><a href="#" class="fs-4">Advogados</a></li>
+                    <li class="mb-2"><a href="#" class="fs-4">Blog</a></li>
+                  </ul>
                 </div>
+              </div>
+              <div class="col-12 col-lg-8 mb-3 mb-lg-0">
+                <div class="map-container">
+                  <iframe class="rounded-3"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.1508517088278!2d-34.89662012523069!3d-8.086094091942309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f3b1de091a5%3A0xaa36e8a250faaab6!2sAv.%20Rep%C3%BAblica%20do%20L%C3%ADbano%2C%20251%20-%20Pina%2C%20Recife%20-%20PE%2C%2051110-160!5e0!3m2!1spt-BR!2sbr!4v1764519351290!5m2!1spt-BR!2sbr"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="linha-footer mx-auto mt-5"></div>
+    <div class="linha-footer mx-auto mt-5"></div>
 
-      <!-- 
+    <!-- 
         ==================================================================
                                 Footer Copyright
         ==================================================================
         -->
-      <div class="container pb-5" id="footer-copyright">
-        <div class="row mt-4">
-          <div class="col-12 col-lg-6">
-            <div class="content1-footer-copy">
-              <p class="    p-0 m-0">
-                Ferrão Coutinho & Manzella Advogados Associados | CNPJ xx.xxx.xxx/xxxx-xxx - Todos os direitos reservados. É proibida a cópia ou reprodução de todo ou qualquer conteúdo contido neste website sem prévia autorização e citação por link.
-              </p>
-            </div>
+    <div class="container pb-5" id="footer-copyright">
+      <div class="row mt-4">
+        <div class="col-12 col-lg-6">
+          <div class="content1-footer-copy">
+            <p class="    p-0 m-0">
+              Ferrão Coutinho & Manzella Advogados Associados | CNPJ xx.xxx.xxx/xxxx-xxx - Todos os direitos reservados.
+              É proibida a cópia ou reprodução de todo ou qualquer conteúdo contido neste website sem prévia autorização
+              e citação por link.
+            </p>
           </div>
-          <div class="col-12 col-lg-6">
-            <div class="content2-footer-copy d-flex flex-column justify-content-center align-items-center">
-                <p class="">
-                    Desenvolvido por
-                </p>
-                <a href="https://www.promovacomunicacao.com.br/" target="_blank">
-                    <img src="img/logo-promova.png" alt="">
-                </a>
-            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="content2-footer-copy d-flex flex-column justify-content-center align-items-center">
+            <p class="">
+              Desenvolvido por
+            </p>
+            <a href="https://www.promovacomunicacao.com.br/" target="_blank">
+              <img src="img/logo-promova.png" alt="">
+            </a>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Link Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Link Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-    <!-- Link Swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Link Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Link JavaScript -->
-    <script src="js/script.js"></script>
-  </body>
+  <!-- Link JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+
 </html>
