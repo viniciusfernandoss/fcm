@@ -14,3 +14,19 @@
     --cor-amarelo2: #D2B174;
     --cor-bg-sobre: rgb(35, 90, 125, 0.07);
 }
+
+.swiper-feedback .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.card-advogada img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.swiper-feedback .swiper-pagination {
+  position: relative;
+  margin-top: 32px;
+}

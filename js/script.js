@@ -27,13 +27,13 @@ const swiper = new Swiper('.swiper-feedback', {
     loop: true,
     grabCursor: true,
     spaceBetween: 20,
-    
+
     pagination: {
         el: '.swiper-feedback .swiper-pagination',
         clickable: true,
-        dynamicBullets: true
+        dynamicBullets: true,
     },
-    
+
     navigation: {
         nextEl: '.swiper-feedback .swiper-button-next',
         prevEl: '.swiper-feedback .swiper-button-prev',
@@ -43,11 +43,11 @@ const swiper = new Swiper('.swiper-feedback', {
         0: {
             slidesPerView: 1
         },
-        992: {
+        768: {
             slidesPerView: 2
         },
-        1024: {
+        1200: {
             slidesPerView: 3
         }
     }
- });
+});
