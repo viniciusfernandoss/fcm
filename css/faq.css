@@ -24,13 +24,12 @@
     
     --bs-accordion-button-active-color: white;
 }   
- 
    
 
 
 .accordion-button.collapsed{
     padding: 2.5%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: rgba(25, 30, 21, 1);
     font-weight: 400;
     background: rgba(35, 90, 125, 0.25);
@@ -42,9 +41,10 @@
     box-shadow: none;
     padding: 2.5%;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .accordion-body{
     font-size: 1rem;
 }
+

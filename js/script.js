@@ -51,3 +51,14 @@ const swiper = new Swiper('.swiper-feedback', {
         }
     }
 });
+
+
+//case de sucesso
+
+  const carousel = document.querySelector('#carouselExampleCaptions');
+  const textoSlide = document.querySelector('#textoSlide');
+
+  carousel.addEventListener('slide.bs.carousel', function (event) {
+    const novoTexto = event.relatedTarget.getAttribute('data-text');
+    textoSlide.textContent = novoTexto;
+  });

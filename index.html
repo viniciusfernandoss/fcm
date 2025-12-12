@@ -263,14 +263,14 @@
 
           </div>
 
-          
+
           <!-- NAVEGAÇÃO CORRETA -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-          
+
           <!-- PAGINAÇÃO CORRETA -->
           <div class="swiper-pagination"></div>
-          
+
         </div>
 
 
@@ -283,109 +283,108 @@
       </div>
     </section>
 
-    <section id="fale-conosco" class="my-5">
+    <section id="fale-conosco" class="fale-conosco-class">
       <div class="container">
 
         <div class="titulo-fale-conosco my-5">
-          <h2 class="fw-bold fs-1 text-center">
-            Fale Conosco
-          </h2>
+          <h2 class="fw-bold fs-1 text-center">Fale Conosco</h2>
         </div>
 
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="content1-fale-conosco">
-              <img src="img/img-fale-conosco.png" alt="img">
+        <div class="row align-items-center">
+
+          <!-- IMAGEM -->
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <div class="content1-fale-conosco text-center text-lg-start">
+              <img src="img/img-fale-conosco.png" alt="img" class="img-fluid">
             </div>
           </div>
+
+          <!-- FORMULÁRIO -->
           <div class="col-lg-9">
-            <div class="content2-fale-conosco my-5">
-              <form id="form-contato" action="https://formsubmit.co/vinicius.senac.ads@gmail.com" method="POST"
-                class="d-flex flex-column">
-                <!-- Configurações do FormSubmit -->
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
+            <form id="form-contato" action="https://formsubmit.co/vinicius.senac.ads@gmail.com" method="POST"
+              class="form-fale-conosco">
 
-                <!-- Campos do formulário -->
-                <input type="text" name="nome" placeholder="Nome" required class="form-nome mb-4">
-                <div class="content-forms d-flex justify-content-between mb-4">
-                  <input type="email" name="email" placeholder="E-email" required class="form-email">
-                  <input type="text" name="assunto" placeholder="Assunto" required class="">
-                </div>
-                <textarea name="mensagem" placeholder="Mensagem" rows="4" required
-                  class="form-mensagem mb-4"></textarea>
+              <!-- Configurações -->
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
 
-                <div class="btn-enviar">
-                  <button type="submit" class="fs-5 px-5 py-2 fw-bolder rounded-2">Enviar</button>
+              <!-- Nome -->
+              <input type="text" name="nome" placeholder="Nome" required class="form-input mb-4">
+
+              <!-- Email + Assunto -->
+              <div class="row mb-4">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <input type="email" name="email" placeholder="E-mail" required class="form-input">
                 </div>
-              </form>
-            </div>
+                <div class="col-md-6">
+                  <input type="text" name="assunto" placeholder="Assunto" required class="form-input">
+                </div>
+              </div>
+
+              <!-- Mensagem -->
+              <textarea name="mensagem" placeholder="Mensagem" rows="4" required class="form-textarea mb-4"></textarea>
+
+              <!-- Botão -->
+              <div class="text-center">
+                <button type="submit" class="btn-enviar">ENVIAR</button>
+              </div>
+
+            </form>
           </div>
+
         </div>
+
       </div>
     </section>
 
-    <section id="casesucesso">
+
+    <section id="casesucesso" class="my-5">
       <div class="container-fluid m-0 p-0">
-        <div id="carouselExampleCaptions" class="carousel slide mb-5">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
+
+        <!-- TEXTO QUE MUDA JUNTO COM O SLIDE -->
+        <div class="titulo-casesucesso text-center py-4">
+          <h2 id="textoSlide">Especialistas em Plano de Saúde</h2>
+        </div>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/img1-casesucesso.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <div
-                  class="titulo-carousel bg-black mx-auto rounded-2 py-1 d-flex justify-content-center align-items-center w-50">
-                  <h2>Especialistas em Plano de Saúde</h2>
-                </div>
-              </div>
+            <div class="carousel-item active" data-text="Especialistas em Plano de Saúde">
+              <img src="img/img1-casesucesso.png" class="d-block w-100" alt="">
             </div>
-            <div class="carousel-item">
-              <img src="img/img2-casesucesso.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <div
-                  class="titulo-carousel bg-black mx-auto rounded-2 py-1 d-flex justify-content-center align-items-center w-50">
-                  <h2>Especialistas em Direito Aéreo</h2>
-                </div>
-              </div>
+
+            <div class="carousel-item" data-text="Especialistas em Direito Aéreo">
+              <img src="img/img2-casesucesso.png" class="d-block w-100" alt="">
             </div>
-            <div class="carousel-item">
-              <img src="img/img3-casesucesso.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <div
-                  class="titulo-carousel bg-black mx-auto rounded-2 py-1 d-flex justify-content-center align-items-center w-50">
-                  <h2>Especialistas em Assessoria Jurídica</h2>
-                </div>
-              </div>
+
+            <div class="carousel-item" data-text="Especialistas em Assessoria Jurídica">
+              <img src="img/img3-casesucesso.png" class="d-block w-100" alt="">
             </div>
           </div>
+
+          <!-- controles -->
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Anterior</span>
           </button>
+
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Próximo</span>
           </button>
         </div>
 
-        <div class="btn-casesucesso text-center">
-          <a href="#" class="px-5 py-3 fw-bold rounded-5">
-            FALE COM UM ESPECIALISTA
-          </a>
+        <div class="btn-casesucesso text-center mt-4">
+          <a href="#" class="px-5 py-3 fw-bold rounded-5">FALE COM UM ESPECIALISTA</a>
         </div>
+
       </div>
     </section>
 
-    <section id="blog">
+
+    <!-- <section id="blog">
       <div class="container py-5">
         <div class="titulo-blog text-center mb-5">
           <h2 class="fw-bold fs-1">Conheça nosso Blog</h2>
@@ -459,179 +458,208 @@
           </a>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section id="faq">
       <div class="container py-5">
         <h2 class="fw-bold fs-1 text-center titulo-faq mb-4">
           Perguntas Frequentes
         </h2>
+
         <div class="row">
           <div class="col-12">
+
             <div class="content-faq">
               <div class="accordion" id="accordionExample">
+
+                <!-- 01 -->
                 <div class="accordion-item mt-3 rounded-3">
                   <h2 class="accordion-header">
                     <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Está com dúvidas e não sabe por onde começar com um Advogado - Recife?
+                      data-bs-target="#collapseOne">
+                      Está com dúvidas e não sabe por onde começar com um Advogado em Recife?
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <hr class="mx-3 my-0 linha-faq" />
                     <div class="accordion-body">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero quis fuga, molestias earum
-                      consequuntur nemo nulla, incidunt, esse et illum obcaecati? Nisi maiores fuga quod quam a?
-                      Assumenda, laboriosam!
+                      O primeiro passo é entrar em contato e explicar brevemente sua situação.
+                      Nosso time fará uma análise inicial, vai orientar sobre quais documentos são
+                      necessários e indicar qual o melhor caminho jurídico para o seu caso.
                     </div>
                   </div>
                 </div>
+
+                <!-- COLUNA 1 -->
                 <div class="container-fluid m-0 p-0">
                   <div class="row">
                     <div class="col-lg-6">
+
                       <div class="content-faq">
+
+                        <!-- 02 -->
                         <div class="accordion-item mt-3 rounded-3">
                           <h2 class="accordion-header">
                             <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                              data-bs-target="#collapse2">
                               Quanto custa contratar um advogado?
                             </button>
                           </h2>
                           <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <hr class="mx-3 my-0 linha-faq" />
                             <div class="accordion-body">
-                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt cumque accusantium
-                              dicta cum, quisquam aut, saepe fugiat laudantium, ullam id facere quaerat neque placeat
-                              repudiandae. Nihil accusantium ut vitae sunt.
+                              Os valores variam conforme o tipo de ação, complexidade do caso e urgência.
+                              Sempre seguimos a tabela de honorários da OAB Pernambuco. Após entender sua necessidade,
+                              apresentamos um orçamento transparente e formalizado em contrato.
                             </div>
                           </div>
                         </div>
+
+                        <!-- 03 -->
                         <div class="accordion-item mt-3 rounded-3">
                           <h2 class="accordion-header">
                             <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                              data-bs-target="#collapse3">
                               Como funciona a primeira consulta?
                             </button>
                           </h2>
                           <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <hr class="mx-3 my-0 linha-faq" />
                             <div class="accordion-body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad eos minus a
-                              accusantium suscipit sint rem omnis veniam consequatur quod fugit quasi facilis
-                              aspernatur, animi repellendus culpa necessitatibus doloribus!
+                              Na primeira consulta, o advogado analisa o caso, orienta sobre seus direitos,
+                              explica possíveis caminhos jurídicos e esclarece todas as dúvidas. Caso seja necessário,
+                              também solicita documentos para estudo mais aprofundado.
                             </div>
                           </div>
                         </div>
+
+                        <!-- 04 -->
                         <div class="accordion-item mt-3 rounded-3">
                           <h2 class="accordion-header">
                             <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                              data-bs-target="#collapse4">
                               O advogado garante o resultado do processo?
                             </button>
                           </h2>
                           <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <hr class="mx-3 my-0 linha-faq" />
                             <div class="accordion-body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quod quia laboriosam
-                              exercitationem amet sint consectetur, labore at quo neque? Porro magnam ipsam inventore,
-                              quasi officiis error placeat ipsa dicta?
+                              Não. Nenhum advogado pode garantir o resultado de um processo, pois
+                              a decisão final sempre depende do Judiciário. O que garantimos é empenho,
+                              responsabilidade e atuação estratégica para buscar o melhor resultado possível.
                             </div>
                           </div>
                         </div>
+
+                        <!-- 05 -->
                         <div class="accordion-item mt-3 rounded-3">
                           <h2 class="accordion-header">
                             <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                              data-bs-target="#collapse8">
                               Como acompanho o andamento do meu processo?
                             </button>
                           </h2>
                           <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <hr class="mx-3 my-0 linha-faq" />
                             <div class="accordion-body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum recusandae omnis quos
-                              quas doloremque quo ipsam repudiandae sed saepe harum consequatur rerum tempore deleniti
-                              facilis in, iusto voluptatem sapiente? Illo.
+                              Você pode acompanhar diretamente com nossa equipe ou pelo site do Tribunal,
+                              usando o número do processo. Sempre que houver movimentação relevante, informamos
+                              imediatamente ao cliente.
                             </div>
                           </div>
                         </div>
+
                       </div>
                     </div>
+
+                    <!-- COLUNA 2 -->
                     <div class="col-lg-6">
                       <div class="content-faq">
+
+                        <!-- 06 -->
                         <div class="accordion-item mt-3 rounded-3">
                           <h2 class="accordion-header">
                             <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                              data-bs-target="#collapse5">
                               Posso parcelar o pagamento dos honorários?
                             </button>
                           </h2>
                           <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <hr class="mx-3 my-0 linha-faq" />
                             <div class="accordion-body">
-                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id assumenda minima doloribus,
-                              animi ipsum nam. Sapiente alias quo necessitatibus perferendis nulla quis, excepturi
-                              fugiat nemo? Ipsam repudiandae velit illum culpa.
+                              Sim. Dependendo do caso, oferecemos parcelamento no cartão, Pix parcelado
+                              ou acordo direto com o escritório, sempre de forma transparente e segura.
                             </div>
                           </div>
                         </div>
+
+                        <!-- 07 -->
                         <div class="accordion-item mt-3 rounded-3">
                           <h2 class="accordion-header">
                             <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                              data-bs-target="#collapse6">
                               Preciso de um advogado para entrar com uma ação judicial?
                             </button>
                           </h2>
                           <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <hr class="mx-3 my-0 linha-faq" />
                             <div class="accordion-body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius commodi assumenda, quod ut
-                              nihil perferendis molestiae tenetur in distinctio maxime quaerat similique alias libero
-                              totam minima officiis est a. Nam.
+                              Na maioria dos casos, sim. Apenas situações de menor complexidade podem ser feitas
+                              sem advogado. Para qualquer ação mais séria ou de maior valor, a lei exige
+                              acompanhamento profissional.
                             </div>
                           </div>
                         </div>
+
+                        <!-- 08 -->
                         <div class="accordion-item mt-3 rounded-3">
                           <h2 class="accordion-header">
                             <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                              data-bs-target="#collapse7">
                               Quanto tempo leva um processo?
                             </button>
                           </h2>
                           <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <hr class="mx-3 my-0 linha-faq" />
                             <div class="accordion-body">
-                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates totam ipsam tempora.
-                              Inventore labore culpa illo debitis ea perspiciatis beatae quae, explicabo molestiae, et
-                              facere ut aut ipsam totam exercitationem!
+                              O tempo varia conforme o tipo de ação, a comarca, a complexidade e a agenda do Judiciário.
+                              Durante toda a tramitação, mantemos você informado sobre cada etapa importante.
                             </div>
                           </div>
                         </div>
+
+                        <!-- 09 -->
                         <div class="accordion-item mt-3 rounded-3">
                           <h2 class="accordion-header">
                             <button class="accordion-button rounded-3 collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                              data-bs-target="#collapse9">
                               O que devo levar na primeira reunião com o advogado?
                             </button>
                           </h2>
                           <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <hr class="mx-3 my-0 linha-faq" />
                             <div class="accordion-body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugit optio facere odio
-                              minima autem doloremque ut eligendi officiis provident a ducimus sapiente sint suscipit,
-                              fuga pariatur eveniet amet dolor.
+                              Documentos pessoais, comprovantes relacionados ao caso (como contratos, mensagens,
+                              exames, recibos, prints ou laudos) e um breve relato da situação. Quanto mais informação,
+                              melhor será a análise inicial.
                             </div>
                           </div>
                         </div>
+
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
+
+                  </div> <!-- row -->
+                </div> <!-- container-fluid -->
+
+              </div> <!-- accordion -->
             </div>
+
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer>
