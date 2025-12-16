@@ -23,6 +23,12 @@
     height: 340px;
 }
 
+.txt-card-servicos {
+    font-family: var(--fonte-Poppins);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 .content-card-servicos h3{
     color: var(--cor-amarelo1);
 }
@@ -31,4 +37,12 @@
     text-decoration: none;
     background-color: var(--cor-amarelo2);
     color: white;
+}
+
+@media (max-width: 1400px) {
+    .txt-card-servicos {
+        font-family: var(--fonte-Poppins);
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
 }
